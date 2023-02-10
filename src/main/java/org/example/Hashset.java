@@ -18,7 +18,5 @@ public class Hashset{
         l.log(Level.INFO, () -> String.valueOf(h));
         h.remove("Kumar");
         l.log(Level.INFO, () -> String.valueOf(h));
-        h.removeAll(h);
-        l.log(Level.INFO, () -> String.valueOf(h));
     }
 }
