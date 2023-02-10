@@ -18,7 +18,7 @@ public class Hashmap {
         l.log(Level.INFO,()->"Values : " + h.values());
         l.log(Level.INFO,()-> "Key-Value mapping: " + h.entrySet());
         h.replace(2, "Nithish", "NITHISH");
-        for(Map.Entry m: h.entrySet()){
+        for(Map.Entry<Integer, String> m: h.entrySet()){
             l.log(Level.INFO,()->m.getKey() + " " + m.getValue());
         }
         l.log(Level.INFO,()->h.get(2));
