@@ -17,7 +17,7 @@ public class Treemap {
         l.log(Level.INFO, () -> String.valueOf(t.lastKey()));
         l.log(Level.INFO, () -> String.valueOf(t.lastEntry()));
         t.replace(2, "Nithish", "NITHISH");
-        for(Map.Entry m: t.entrySet()){
+        for(Map.Entry<Integer, String> m: t.entrySet()){
             l.log(Level.INFO,()->m.getKey() + " " + m.getValue());
         }
         l.log(Level.INFO,()->t.get(2));
